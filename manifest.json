@@ -1,0 +1,37 @@
+{
+    "name": "Tajrobe",
+    "short_name": "tajrobe",
+    "description": "Shows reviews of companies who are hiring in job finding platforms like jobinja, jobvision and quera.",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "author": "Jimbo",
+    "background": {
+      "service_worker": "/core/background.js",
+      "type": "module"
+    },
+    "action": {
+      "default_icon": {
+        "16": "assets/img/icon-16.png",
+        "32": "assets/img/icon-32.png",
+        "64": "assets/img/icon-64.png"
+      }
+    },
+    "icons": {
+      "128": "assets/img/icon-128.png",
+      "16": "assets/img/icon-16.png",
+      "32": "assets/img/icon-32.png",
+      "64": "assets/img/icon-64.png"
+    },
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "permissions": [
+      "scripting",
+      "storage"
+    ],
+    "host_permissions": [
+      "*://*.jobinja.ir/*",
+      "*://*.jobvision.ir/*",
+      "*://*.quera.ir/*"
+    ],
+    "web_accessible_resources": []
+  }
+  
